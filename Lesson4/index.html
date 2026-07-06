@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практика по формам</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset class="fieldset1">
+        <h3>Ваши личные данные</h3>
+        <label>
+          Ваше имя
+          <input type="text" placeholder="Имя" required />
+        </label>
+        <label>
+          Ваш возраст
+          <input type="number" placeholder="Возраст" required />
+        </label>
+        <label>
+          Ваш номер телефона
+          <input type="tel" placeholder="Номер телефона" required />
+        </label>
+        <label>
+          Ваша почта
+          <input type="email" placeholder="Почта" required />
+        </label>
+        <label>
+          Сообщение
+          <textarea placeholder="Ваше сообщение" required></textarea>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="checkbox" required />
+          Я принимаю правила
+        </label>
+        <button>Отправить</button>
+    </form>
+  </body>
+</html>
