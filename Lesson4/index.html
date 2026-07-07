@@ -8,8 +8,8 @@
   </head>
   <body>
     <form>
-      <fieldset class="fieldset1">
-        <h3>Ваши личные данные</h3>
+      <fieldset class="fieldset">
+        <legend>Ваши личные данные</legend>
         <label>
           Ваше имя
           <input type="text" placeholder="Имя" required />
@@ -26,6 +26,8 @@
           Ваша почта
           <input type="email" placeholder="Почта" required />
         </label>
+      </fieldset>
+      <fieldset class="fieldset">
         <label>
           Сообщение
           <textarea placeholder="Ваше сообщение" required></textarea>
@@ -34,7 +36,8 @@
           <input type="checkbox" id="checkbox" required />
           Я принимаю правила
         </label>
-        <button>Отправить</button>
+      </fieldset>
+      <button>Отправить</button>
     </form>
   </body>
 </html>

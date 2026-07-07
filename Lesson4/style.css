@@ -4,20 +4,17 @@ form {
   border-radius: 10px;
   display: inline-block;
   width: 400px;
-}
-
-fieldset {
-  border: none;
+  padding: 15px;
 }
 
 label {
   display: block;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 18px;
   font-weight: 500;
 }
 
-.fieldset1 input,
+.fieldset input,
 textarea {
   display: block;
   border: 1px solid #000;
@@ -60,4 +57,15 @@ button {
 button:hover {
   background-color: rgb(202, 202, 225);
   transition: background-color 0.5s ease;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0;
+}
+
+.fieldset {
+  border: none;
+  padding: 0;
 }
