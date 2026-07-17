@@ -5,6 +5,10 @@
 
 .ul {
   padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 15px;
 }
 
 .header_flex-container {
@@ -28,8 +32,6 @@
 
 .li {
   list-style: none;
-  display: inline-block;
-  padding: 10px;
 }
 
 .li-content {
