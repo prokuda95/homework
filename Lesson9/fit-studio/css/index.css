@@ -3,19 +3,13 @@
   padding-top: 80px;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
+.hero::before {
   bottom: 106px;
-  z-index: -1;
   width: 100%;
-  height: 48px;
-  background: url(../images/decor-large-icon.svg) repeat-x;
 }
 
 .hero-container {
   display: flex;
-  align-items: center;
   gap: 28px;
 }
 
@@ -32,6 +26,10 @@
 .hero h1 strong {
   color: #3596ed;
   font-weight: 600;
+}
+
+.hero-info {
+  max-width: 492px;
 }
 
 .hero-info .text {
@@ -64,6 +62,7 @@
 .news-article {
   display: flex;
   flex-direction: column;
+  flex: 1 1 25%;
   border: 1px solid #d3cbd9;
   background: #fff;
   max-width: 284px;
@@ -117,23 +116,22 @@
 }
 
 .faq::before {
-  content: "";
-  position: absolute;
   top: 215px;
-  z-index: -1;
-  width: calc(50% - 250px);
-  height: 48px;
-  background: url(../images/decor-large-icon.svg) repeat-x;
 }
 
 .faq-container {
   display: flex;
+  align-items: flex-start;
   gap: 28px;
 }
 
 details {
   margin-bottom: 20px;
   border-block: 1px solid #d3cbd9;
+}
+
+details:last-child {
+  margin-bottom: 0;
 }
 
 details[open] summary::after {
@@ -153,6 +151,7 @@ summary {
 summary::after {
   content: "";
   display: inline-block;
+  flex-shrink: 0;
   width: 17px;
   height: 22px;
   background: url(../images/arrow-down-icon.svg) no-repeat center / cover;
@@ -164,4 +163,90 @@ summary::-webkit-details-marker {
 
 details > p {
   padding: 0 20px 20px;
+}
+
+@media (width <= 1440px) {
+  .hero-images img {
+    width: 50%;
+  }
+}
+
+@media (width <= 992px) {
+  .hero::after {
+    display: none;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-info {
+    text-align: center;
+  }
+
+  .hero h1 {
+    margin-bottom: 30px;
+    font-size: 52px;
+  }
+
+  .hero-info .text {
+    max-width: inherit;
+    margin-bottom: 40px;
+  }
+
+  .news-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .news-article {
+    flex-basis: 50%;
+    max-width: 350px;
+  }
+
+  .news-article img {
+    width: 100%;
+  }
+
+  .faq::before {
+    display: none;
+  }
+
+  .faq-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media (width <= 768px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .news-article {
+    flex-basis: 50%;
+    max-width: 400px;
+  }
+}
+
+@media (width <= 576px) {
+  .hero {
+    padding-top: 60px;
+  }
+
+  .hero-info {
+    max-width: 410px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-choose {
+    max-width: 125px;
+    padding: 10px;
+    font-size: 14px;
+  }
 }

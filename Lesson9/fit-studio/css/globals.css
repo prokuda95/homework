@@ -12,6 +12,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  min-width: 375px;
   min-height: 100vh;
 }
 
@@ -27,6 +28,13 @@ p {
 
 a {
   text-decoration: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 a,
@@ -109,6 +117,15 @@ button {
   color: #858e8a;
 }
 
+.decor::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: calc(50% - 250px);
+  height: 48px;
+  background: url(../images/decor-large-icon.svg) repeat-x;
+}
+
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
@@ -118,4 +135,45 @@ summary:focus-visible {
 
 a:active {
   color: #3596ed;
+}
+
+@media (width <= 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (width <= 768px) {
+  .container {
+    max-width: 576px;
+  }
+
+  .title-large {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .home-page .title-large {
+    text-align: center;
+    max-width: inherit;
+    margin-bottom: 30px;
+  }
+
+  .title-medium {
+    font-size: 22px;
+  }
+}
+
+@media (width <= 576px) {
+  .section {
+    margin-bottom: 80px;
+  }
+
+  .title-large {
+    font-size: 34px;
+  }
+
+  .title-medium {
+    font-size: 18px;
+  }
 }
