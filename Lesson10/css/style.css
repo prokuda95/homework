@@ -21,7 +21,7 @@ body {
 .header {
   background-color: #f00;
   grid-column-start: 12 span;
-  height: 100px;
+  min-height: 100px;
 }
 
 .aside {
@@ -46,13 +46,13 @@ body {
 
 .article {
   background-color: #f80;
-  height: 300px;
+  min-height: 300px;
 }
 
 .footer {
   background-color: #00f;
   grid-column-start: 12 span;
-  height: 200px;
+  min-height: 200px;
 }
 
 @media (width <= 1200px) {
