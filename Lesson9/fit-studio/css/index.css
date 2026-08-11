@@ -8,12 +8,12 @@
   width: 100%;
 }
 
-.hero-container {
+.hero__container {
   display: flex;
   gap: 28px;
 }
 
-.hero h1 {
+.hero__title {
   margin-bottom: 40px;
   font-family: Oswald, sans-serif;
   font-weight: 600;
@@ -23,26 +23,36 @@
   color: #2c332f;
 }
 
-.hero h1 strong {
+.hero__title-accent {
   color: #3596ed;
   font-weight: 600;
 }
 
-.hero-info {
+.hero__info {
   max-width: 492px;
 }
 
-.hero-info .text {
+.hero__info-text {
   margin-bottom: 140px;
   max-width: 440px;
 }
 
-.hero-images {
+.hero__images {
   position: relative;
   display: flex;
 }
 
-.hero-choose {
+.hero__img {
+  width: 347px;
+  height: 513px;
+}
+
+.hero__img--man {
+  width: 353px;
+  height: 513px;
+}
+
+.hero__choose {
   position: absolute;
   top: 40px;
   left: 50%;
@@ -54,12 +64,12 @@
   text-align: center;
 }
 
-.news-container {
+.news__container {
   display: flex;
   gap: 28px;
 }
 
-.news-article {
+.news__article {
   display: flex;
   flex-direction: column;
   flex: 1 1 25%;
@@ -69,26 +79,26 @@
   overflow: hidden;
 }
 
-.news-article img {
+.news__article-img {
   display: block;
 }
 
-.news-info {
+.news__info {
   padding: 20px 20px 0;
   margin-bottom: 12px;
 }
 
-.news-date {
+.news__info-date {
   display: inline-block;
   margin-bottom: 8px;
 }
 
-.news-article footer {
+.news__article-footer {
   padding: 0 20px 20px;
   margin-bottom: auto;
 }
 
-.news-link {
+.news__article-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -98,11 +108,11 @@
   color: #3596ed;
 }
 
-.news-link:hover::after {
+.news__article-link:hover::after {
   transform: translateX(5px);
 }
 
-.news-link::after {
+.news__article-link::after {
   content: "";
   display: inline-block;
   width: 22px;
@@ -119,26 +129,26 @@
   top: 215px;
 }
 
-.faq-container {
+.faq__container {
   display: flex;
   align-items: flex-start;
   gap: 28px;
 }
 
-details {
+.faq__div-details {
   margin-bottom: 20px;
   border-block: 1px solid #d3cbd9;
 }
 
-details:last-child {
+.faq__div-details:last-child {
   margin-bottom: 0;
 }
 
-details[open] summary::after {
+.faq__div-details[open] summary::after {
   transform: rotate(180deg);
 }
 
-summary {
+.faq__div-summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -148,7 +158,7 @@ summary {
   cursor: pointer;
 }
 
-summary::after {
+.faq__div-summary::after {
   content: "";
   display: inline-block;
   flex-shrink: 0;
@@ -157,16 +167,16 @@ summary::after {
   background: url(../images/arrow-down-icon.svg) no-repeat center / cover;
 }
 
-summary::-webkit-details-marker {
+.faq__div-summary::-webkit-details-marker {
   display: none;
 }
 
-details > p {
+.faq__div-details > p {
   padding: 0 20px 20px;
 }
 
 @media (width <= 1440px) {
-  .hero-images img {
+  .hero__img {
     width: 50%;
   }
 }
@@ -176,37 +186,37 @@ details > p {
     display: none;
   }
 
-  .hero-container {
+  .hero__container {
     flex-direction: column;
     align-items: center;
   }
 
-  .hero-info {
+  .hero__info {
     text-align: center;
   }
 
-  .hero h1 {
+  .hero__title {
     margin-bottom: 30px;
     font-size: 52px;
   }
 
-  .hero-info .text {
+  .hero__info-text {
     max-width: inherit;
     margin-bottom: 40px;
   }
 
-  .news-container {
+  .news__container {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
 
-  .news-article {
+  .news__article {
     flex-basis: 50%;
     max-width: 350px;
   }
 
-  .news-article img {
+  .news__article-img {
     width: 100%;
   }
 
@@ -214,18 +224,18 @@ details > p {
     display: none;
   }
 
-  .faq-container {
+  .faq__container {
     flex-direction: column-reverse;
     align-items: center;
   }
 }
 
 @media (width <= 768px) {
-  .hero h1 {
+  .hero__title {
     font-size: 50px;
   }
 
-  .news-article {
+  .news__article {
     flex-basis: 50%;
     max-width: 400px;
   }
@@ -236,15 +246,15 @@ details > p {
     padding-top: 60px;
   }
 
-  .hero-info {
+  .hero__info {
     max-width: 410px;
   }
 
-  .hero h1 {
+  .hero__title {
     font-size: 42px;
   }
 
-  .hero-choose {
+  .hero__choose {
     max-width: 125px;
     padding: 10px;
     font-size: 14px;
