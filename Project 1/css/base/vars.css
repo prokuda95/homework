@@ -1,0 +1,37 @@
+/* 
+576 
+768 
+992 
+1200 
+1400   
+*/
+
+:root {
+  /* font-family */
+  --font-family: "GothamPro", sans-serif;
+  --second-family: "LatinCT-Wide", sans-serif;
+  --third-family: "Roboto", sans-serif;
+  --fourth-family: "Bahnschrift-Condensed", sans-serif;
+
+  /* colors  */
+  --main-color: #fff;
+  --accent-color: #dc6b30;
+  --bg-color: #0e0e12;
+  --percent-color: #4bd879;
+  --icons-color: #62ba7f;
+  --disable-color: #5d5d56;
+  --shadow-color: #181817;
+
+  /* container  */
+  --container-width: 1571px;
+  --container-padding: 30px;
+
+  /* transitions */
+  --transition-time: 0.3s;
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}

@@ -1,0 +1,52 @@
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+@media (width >= 1400px) {
+  .controls {
+    gap: 72px;
+  }
+}
+
+@media (width < 1400px) {
+  .controls {
+    gap: 20px;
+  }
+}
+
+@media (width < 992px) {
+  .controls {
+    position: fixed;
+    align-items: start;
+    flex-direction: column;
+    min-width: 300px;
+    z-index: var(--layer-2);
+    left: -100vw;
+    top: 0;
+    bottom: 0;
+    padding-top: 140px;
+    padding-left: 40px;
+    background-color: var(--bg-color);
+    box-shadow: -2px 0 20px 0 var(--shadow-color);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity var(--transition-time),
+      visibility var(--transition-time),
+      left var(--transition-time);
+  }
+
+  .controls--open {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@media (width < 576px) {
+  .controls {
+    padding-top: 100px;
+    padding-left: 35px;
+  }
+}
