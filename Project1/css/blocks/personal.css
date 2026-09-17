@@ -1,0 +1,88 @@
+.personal__button {
+  font-weight: 400;
+  color: var(--main-color);
+  border: 1px solid var(--accent-color);
+  transition: background var(--transition-time);
+}
+
+.personal__button:hover {
+  background: var(--accent-color);
+}
+
+@media (width >= 1280px) {
+  .personal__button {
+    width: 113px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (width < 1280px) {
+  .personal__button {
+    border-radius: 15px;
+    width: 88px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media (width < 576px) {
+  .personal__button {
+    border-radius: 12px;
+    width: 60px;
+    height: 36px;
+    font-size: 12px;
+  }
+}
+
+.personal__button--accent {
+  font-weight: 700;
+  color: #000;
+  box-shadow:
+    inset 0 -4px 0 0 #8f4119,
+    0 3px 49px -3px rgba(226, 128, 72, 0.76);
+  background: linear-gradient(
+    87.05deg,
+    #dc6b30 17.98%,
+    #e4864f 49.63%,
+    #ffbe82 72.68%,
+    #e49031 93%
+  );
+  transition: opacity 0.3s ease;
+}
+
+.personal__button--accent:hover {
+  opacity: 0.85;
+}
+
+@media (width >= 1280px) {
+  .personal__button--accent {
+    width: 234px;
+    height: 66px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (width < 1280px) {
+  .personal__button--accent {
+    border-radius: 15px;
+    width: 148px;
+    height: 56px;
+    font-size: 16px;
+  }
+}
+
+@media (width < 576px) {
+  .personal__button--accent {
+    font-weight: 500;
+    border-radius: 12px;
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    box-shadow:
+      inset 0 -2px 0 0 #8f4119,
+      0 3px 35px -3px rgba(226, 128, 72, 0.76);
+  }
+}
