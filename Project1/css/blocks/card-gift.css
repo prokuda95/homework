@@ -1,0 +1,175 @@
+.card-gift {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 19px;
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin: auto;
+  height: 105px;
+  background: linear-gradient(90.19deg, rgba(255, 255, 255, 0.06) 0.73%);
+}
+
+@media (width < 768px) {
+  .card-gift {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    padding-left: 50px;
+    gap: 5px;
+  }
+}
+
+@media (width < 576px) {
+  .card-gift {
+    height: 72px;
+    padding-left: 35px;
+    width: 100%;
+    border-radius: 0;
+    gap: 2px;
+  }
+}
+
+.card-gift__img {
+  max-width: 60px;
+  max-height: 60px;
+  margin-left: 10px;
+  transform: rotate(-17deg);
+}
+
+@media (width < 1400px) {
+  .card-gift__img {
+    max-width: 55px;
+    max-height: 55px;
+  }
+}
+
+@media (width < 1280px) {
+  .card-gift__img {
+    max-width: 55px;
+    max-height: 55px;
+  }
+}
+
+@media (width < 768px) {
+  .card-gift__img {
+    position: absolute;
+    top: 27%;
+    left: 87%;
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
+@media (width < 576px) {
+  .card-gift__img {
+    position: absolute;
+    top: 30%;
+    left: 88%;
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
+
+.card-gift__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 7px;
+  font-size: 17px;
+}
+
+@media (width < 1400px) {
+  .card-gift__text {
+    max-width: 600px;
+  }
+}
+
+@media (width < 1280px) {
+  .card-gift__text {
+    font-size: 15px;
+  }
+}
+
+@media (width < 992px) {
+  .card-gift__text {
+    max-width: 410px;
+    font-size: 15px;
+  }
+}
+
+@media (width < 768px) {
+  .card-gift__text {
+    max-width: 380px;
+    font-size: 14px;
+    gap: 5px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (width < 576px) {
+  .card-gift__text {
+    max-width: 300px;
+    gap: 2px;
+    font-size: 11px;
+    padding-bottom: 7px;
+  }
+}
+
+.card-gift__text--top {
+  font-weight: 500;
+}
+
+.card-gift__text--bottom {
+  font-weight: 300;
+}
+
+.card-gift__countdown {
+  margin-left: auto;
+  margin-right: 50px;
+  font-size: 26px;
+}
+
+@media (width < 1280px) {
+  .card-gift__countdown {
+    font-size: 20px;
+    margin-right: 30px;
+  }
+}
+
+@media (width < 992px) {
+  .card-gift__countdown {
+    font-size: 18px;
+    margin-right: 25px;
+  }
+}
+
+@media (width < 768px) {
+  .card-gift__countdown {
+    font-size: 15px;
+    margin: 0;
+  }
+}
+
+@media (width < 576px) {
+  .card-gift__countdown {
+    font-size: 12px;
+  }
+}
+
+.card-gift__countdown--small {
+  font-size: 18px;
+}
+
+@media (width < 1280px) {
+  .card-gift__countdown--small {
+    font-size: 14px;
+  }
+}
+
+@media (width < 992px) {
+  .card-gift__countdown--small {
+    font-size: 11px;
+  }
+}

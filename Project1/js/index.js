@@ -4,8 +4,8 @@ try {
   new BurgerMenu({
     BURGER: "burger",
     BURGER_OPEN: "burger--open",
-    HEADER_MENU: "header__controls",
-    HEADER_MENU_OPEN: "controls--open",
+    HEADER_MENU: "burger__elements",
+    HEADER_MENU_OPEN: "burger__elements--open",
     lABEL: {
       OPEN: "Открыть меню",
       CLOSE: "Закрыть меню",

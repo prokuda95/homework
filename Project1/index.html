@@ -32,13 +32,13 @@
             ></use>
           </svg>
         </button>
-        <a href="/" class="logo header__icon">
+        <a href="/" class="logo header__logo">
           <svg class="header__logo-icon">
             <use class="logo-icon" href="./icons/logo-icon.svg#logo"></use>
           </svg>
           <h2 class="header__icon-text">Leader <br />Classic</h2>
         </a>
-        <div class="controls header__controls" id="header__controls">
+        <div class="burger__elements">
           <button class="header__lang">
             <svg class="header__lang-country-icon" width="23" height="23">
               <use
@@ -51,30 +51,62 @@
               <use href="./icons/arrow-down-icon.svg#arrow-down"></use>
             </svg>
           </button>
-          <nav class="menu header__menu" aria-label="Главное меню">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="#tariffs">Тарифы</a>
+          <nav
+            class="nav header__nav"
+            id="header__nav"
+            aria-label="Главное меню"
+          >
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#tariffs">Тарифы</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#bonus">Бонус</a>
+              <li class="nav__item">
+                <a class="nav__link" href="#bonus">Бонус</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#referral">Реферальная</a>
+              <li class="nav__item">
+                <a class="nav__link" href="#referral">Реферальная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#referral">Контакты</a>
               </li>
             </ul>
           </nav>
-          <a class="header__accent-link" href="/">
-            <span class="header__accent-text">Контакты</span> ✨</a
-          >
         </div>
-        <div class="personal header__personal">
-          <button class="personal__button">Войти</button>
-          <button class="personal__button personal__button--accent">
+
+        <div class="controls header__controls">
+          <button class="controls__button">Войти</button>
+          <button class="controls__button controls__button--accent">
             Открыть счёт
           </button>
         </div>
       </div>
     </header>
+    <main class="main">
+      <section class="hero">
+        <div class="card-gift hero__card-gift">
+            <picture>
+              <img
+                class="card-gift__img"
+                src="./images/gift.png"
+                alt="Подарок с желтым бантиком"
+              />
+            </picture>
+            <div class="card-gift__text">
+              <p class="card-gift__text--top">
+                Станьте миллионером с Leader Classic
+              </з>
+              <p class="card-gift__text--bottom">
+                Откройте счет, инвестируйте в фонды Leader Classic и получите
+                шанс выиграть один из 100 000 000 &#8381;
+              </p>
+            </div>
+            <p class="card-gift__countdown">
+              27<span class="card-gift__countdown--small"> д </span>: 07<span class="card-gift__countdown--small"> д </span>: 40<span class="card-gift__countdown--small"> м </span>: 49<span class="card-gift__countdown--small"> c </span>
+            </p>
+          </div>
+        <div class="container hero__container">
+        </div>
+      </section>
+    </main>
   </body>
 </html>

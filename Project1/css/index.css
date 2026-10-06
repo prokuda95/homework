@@ -6,7 +6,8 @@
 
 /* blocks */
 @import "./blocks/header.css";
-@import "./blocks/menu.css";
-@import "./blocks/personal.css";
+@import "./blocks/nav.css";
 @import "./blocks/controls.css";
 @import "./blocks/burger.css";
+@import "./blocks/card-gift.css";
+@import "./blocks/hero.css";
