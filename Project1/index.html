@@ -13,7 +13,7 @@
     <title>Leader Classic</title>
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header decor">
       <div class="container header__container">
         <button
           class="header__burger burger"
@@ -72,10 +72,11 @@
             </ul>
           </nav>
         </div>
-
         <div class="controls header__controls">
-          <button class="controls__button">Войти</button>
-          <button class="controls__button controls__button--accent">
+          <button class="controls__button main-button">Войти</button>
+          <button
+            class="controls__button controls__button--accent main-button main-button--accent"
+          >
             Открыть счёт
           </button>
         </div>
@@ -84,27 +85,71 @@
     <main class="main">
       <section class="hero">
         <div class="card-gift hero__card-gift">
-            <picture>
-              <img
-                class="card-gift__img"
-                src="./images/gift.png"
-                alt="Подарок с желтым бантиком"
-              />
-            </picture>
-            <div class="card-gift__text">
-              <p class="card-gift__text--top">
-                Станьте миллионером с Leader Classic
-              </з>
-              <p class="card-gift__text--bottom">
-                Откройте счет, инвестируйте в фонды Leader Classic и получите
-                шанс выиграть один из 100 000 000 &#8381;
-              </p>
-            </div>
-            <p class="card-gift__countdown">
-              27<span class="card-gift__countdown--small"> д </span>: 07<span class="card-gift__countdown--small"> д </span>: 40<span class="card-gift__countdown--small"> м </span>: 49<span class="card-gift__countdown--small"> c </span>
+          <picture>
+            <img
+              class="card-gift__img"
+              src="./images/gift-img.png"
+              alt="Подарок с желтым бантиком"
+            />
+          </picture>
+          <div class="card-gift__text">
+            <p class="card-gift__text--top">
+              Станьте миллионером с Leader Classic
+            </p>
+            <p class="card-gift__text--bottom">
+              Откройте счет, инвестируйте в фонды Leader Classic и получите шанс
+              выиграть один из 100 000 000 &#8381;
             </p>
           </div>
+          <p class="card-gift__countdown">
+            27<span class="card-gift__countdown--small"> д </span>: 07<span
+              class="card-gift__countdown--small"
+            >
+              д </span
+            >: 40<span class="card-gift__countdown--small"> м </span>: 49<span
+              class="card-gift__countdown--small"
+            >
+              c
+            </span>
+          </p>
+        </div>
         <div class="container hero__container">
+          <div class="hero__info">
+            <h1 class="hero__info-title title__large">
+              ТОП-5 акций <br />
+              с доходностью до 10-30%<br />
+              уже в 2022 году
+            </h1>
+            <ul class="hero__info-list">
+              <li class="hero__info-item">
+                Открытие брокерского счета за 5 минут без визита в офис
+              </li>
+              <li class="hero__info-item">
+                Доступ к ценным бумагам с любого устройства
+              </li>
+              <li class="hero__info-item">Поддержка в чате 24/7</li>
+            </ul>
+            <div class="hero__buttons">
+              <button
+                class="hero__button hero__button--accent main-button main-button--accent"
+              >
+                Скачать ТОП-5 акций
+              </button>
+              <img
+                src=".//images/сhecklist_open_acc-img.png"
+                alt="Чек лист эффективности"
+                class="hero__button-img"
+              />
+              <button class="hero__button main-button">Открыть счёт</button>
+            </div>
+          </div>
+          <div class="hero__img-wrap decor">
+            <img
+              class="hero__img"
+              src=".//images/iPhone-in-hand-img.png"
+              alt="Айфон в деревянной руке с открытой страницей Leader Classic"
+            />
+          </div>
         </div>
       </section>
     </main>

@@ -1,14 +1,3 @@
-.controls__button {
-  font-weight: 400;
-  color: var(--main-color);
-  border: 1px solid var(--accent-color);
-  transition: background var(--transition-time);
-}
-
-.controls__button:hover {
-  background: var(--accent-color);
-}
-
 @media (width >= 1280px) {
   .controls__button {
     width: 113px;
@@ -34,26 +23,6 @@
     height: 36px;
     font-size: 12px;
   }
-}
-
-.controls__button--accent {
-  font-weight: 700;
-  color: #000;
-  box-shadow:
-    inset 0 -4px 0 0 #8f4119,
-    0 3px 49px -3px rgba(226, 128, 72, 0.76);
-  background: linear-gradient(
-    87.05deg,
-    #dc6b30 17.98%,
-    #e4864f 49.63%,
-    #ffbe82 72.68%,
-    #e49031 93%
-  );
-  transition: opacity 0.3s ease;
-}
-
-.controls__button--accent:hover {
-  opacity: 0.85;
 }
 
 @media (width >= 1280px) {
