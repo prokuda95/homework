@@ -5,9 +5,13 @@
 @import "./base/globals.css";
 
 /* blocks */
+@import "./blocks/main-button.css";
 @import "./blocks/header.css";
 @import "./blocks/nav.css";
 @import "./blocks/controls.css";
 @import "./blocks/burger.css";
 @import "./blocks/card-gift.css";
 @import "./blocks/hero.css";
+@import "./blocks/get-catalog.css";
+@import "./blocks/tools.css";
+@import "./blocks/investment-steps.css";

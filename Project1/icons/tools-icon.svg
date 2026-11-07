@@ -1,0 +1,80 @@
+<!-- Спрайт иконок (скрытый) - Тонкие линии -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+    <!-- Forex (Валюты) -->
+    <symbol id="icon-forex" viewBox="0 0 80 80">
+        <rect x="10" y="10" width="60" height="60" rx="12" stroke="currentColor" stroke-width="1.5" fill="none" />
+        <!-- Свечи -->
+        <path d="M27 34V32 M27 46V44 M24 44V34H30V44H24Z" stroke="currentColor" stroke-width="1.5"
+            stroke-linejoin="round" fill="none" />
+        <path d="M37 26V24 M37 42V40 M34 40V26H40V40H34Z" stroke="currentColor" stroke-width="1.5"
+            stroke-linejoin="round" fill="none" />
+        <path d="M47 44V42 M47 54V52 M44 52V44H50V52H44Z" stroke="currentColor" stroke-width="1.5"
+            stroke-linejoin="round" fill="none" />
+    </symbol>
+
+    <!-- Metals (Металлы) -->
+    <symbol id="icon-metals" viewBox="0 0 80 80">
+        <rect x="10" y="10" width="60" height="60" rx="12" stroke="currentColor" stroke-width="1.5" fill="none" />
+        <!-- Слитки -->
+        <path d="M28 52H52L48 42H32L28 52Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
+            fill="none" />
+        <path d="M34 42L37 34H43L46 42" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none" />
+        <!-- Искры -->
+        <circle cx="40" cy="24" r="1" fill="currentColor" />
+        <circle cx="34" cy="28" r="1" fill="currentColor" />
+        <circle cx="46" cy="28" r="1" fill="currentColor" />
+    </symbol>
+
+    <!-- Indices (Индексы) -->
+    <symbol id="icon-indices" viewBox="0 0 80 80">
+        <rect x="10" y="10" width="60" height="60" rx="12" stroke="currentColor" stroke-width="1.5" fill="none" />
+        <!-- Башни/График -->
+        <path d="M30 52V38 M36 52V32 M42 52V42 M48 52V28" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" />
+        <path d="M26 34L36 26L44 30L54 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </symbol>
+
+    <!-- Cryptocurrencies (Криптовалюты) -->
+    <symbol id="icon-crypto" viewBox="0 0 80 80">
+        <rect x="10" y="10" width="60" height="60" rx="12" stroke="currentColor" stroke-width="1.5" fill="none" />
+        <!-- Сеть -->
+        <circle cx="40" cy="40" r="4" stroke="currentColor" stroke-width="1.5" fill="none" />
+        <circle cx="28" cy="32" r="3" stroke="currentColor" stroke-width="1.5" fill="none" />
+        <circle cx="52" cy="32" r="3" stroke="currentColor" stroke-width="1.5" fill="none" />
+        <circle cx="40" cy="52" r="3" stroke="currentColor" stroke-width="1.5" fill="none" />
+        <path d="M31 34L37 38 M49 34L43 38 M40 44V49" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+    </symbol>
+
+    <!-- Shares (Акции) -->
+    <symbol id="icon-shares" viewBox="0 0 80 80">
+        <rect x="10" y="10" width="60" height="60" rx="12" stroke="currentColor" stroke-width="1.5" fill="none" />
+        <!-- Оси -->
+        <path d="M26 30V54H50" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        <!-- Линия графика -->
+        <path d="M30 46L38 38L44 44L52 34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        <!-- Стрелка -->
+        <path d="M46 34H52V40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </symbol>
+
+    <!-- Energies (Энергоносители) -->
+    <symbol id="icon-energies" viewBox="0 0 80 80">
+        <rect x="10" y="10" width="60" height="60" rx="12" stroke="currentColor" stroke-width="1.5" fill="none" />
+        <!-- Батарея / Контейнер -->
+        <path d="M36 28V24C36 22 38 20 40 20C42 20 44 22 44 24V28" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" fill="none" />
+        <rect x="30" y="28" width="20" height="26" rx="4" stroke="currentColor" stroke-width="1.5" fill="none" />
+        <!-- Капля -->
+        <path d="M40 35C40 35 36 39 36 42C36 44.2 37.8 46 40 46C42.2 46 44 44.2 44 42C44 39 40 35 40 35Z"
+            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none" />
+        <!-- Клеммы / Детали сбоку -->
+        <path d="M24 38H28 M24 44H28 M52 38H56 M52 44H56" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" />
+        <path d="M54 32V34 M54 48V50" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+    </symbol>
+
+</svg>

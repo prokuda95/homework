@@ -1,0 +1,297 @@
+.get-catalog {
+  margin-bottom: 162px;
+}
+
+@media (width <= 1400px) {
+  .get-catalog {
+    margin-bottom: 122px;
+  }
+}
+
+@media (width <= 1200px) {
+  .get-catalog {
+    margin-bottom: 100px;
+  }
+}
+
+@media (width <= 992px) {
+  .get-catalog {
+    margin-top: 630px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (width <= 768px) {
+  .get-catalog {
+    margin-top: 580px;
+  }
+}
+
+@media (width <= 576px) {
+  .get-catalog {
+    margin-top: 390px;
+  }
+}
+
+.get-catalog__text-block {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+}
+
+@media (width <= 768px) {
+  .get-catalog__text-block {
+    gap: 17px;
+  }
+}
+
+@media (width <= 576px) {
+  .get-catalog__text-block {
+    gap: 10px;
+  }
+}
+
+.get-catalog__title {
+  max-width: 850px;
+  min-width: 300px;
+  /* min-width 375px, max-width 1920px */
+  font-size: clamp(25px, 0.88rem + 2.91vw, 70px);
+  text-align: center;
+}
+
+.get-catalog__text {
+  max-width: 660px;
+  /* min-width 375px, max-width 1920px */
+  font-size: clamp(12px, 0.553rem + 0.84vw, 25px);
+  text-align: center;
+}
+
+.get-catalog__text--accent {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.get-catalog__roulette {
+  margin-top: 90px;
+  margin-bottom: 109px;
+  display: flex;
+}
+
+@media (width <= 1200px) {
+  .get-catalog__roulette {
+    margin-bottom: 80px;
+  }
+}
+
+@media (width <= 992px) {
+  .get-catalog__roulette {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (width <= 768px) {
+  .get-catalog__roulette {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.get-catalog__roulette-slider {
+  display: flex;
+  min-height: 295px;
+  animation: scrollInfinite 30s linear infinite;
+}
+
+@keyframes scrollInfinite {
+  0% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(calc(-50% - 60px));
+  }
+}
+
+@media (width <= 1400px) {
+  .get-catalog__roulette-slider {
+    min-height: 235px;
+  }
+}
+@media (width <= 1200px) {
+  .get-catalog__roulette-slider {
+    min-height: 220px;
+  }
+}
+
+@media (width <= 992px) {
+  .get-catalog__roulette-slider {
+    min-height: 200px;
+  }
+}
+
+@media (width <= 768px) {
+  .get-catalog__roulette-slider {
+    min-height: 100%;
+  }
+}
+
+.get-catalog__card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  width: 144px;
+  margin-right: 90px;
+}
+
+@media (width <= 1400px) {
+  .get-catalog__card {
+    gap: 5px;
+    margin-right: 60px;
+  }
+}
+
+@media (width <= 1200px) {
+  .get-catalog__card {
+    gap: 3px;
+    margin-right: 50px;
+  }
+}
+
+@media (width <= 992px) {
+  .get-catalog__card {
+    margin-right: 40px;
+  }
+}
+
+@media (width <= 768px) {
+  .get-catalog__card {
+    width: 80px;
+    margin-right: 20px;
+  }
+}
+
+@media (width <= 576px) {
+  .get-catalog__card {
+    margin-right: 10px;
+  }
+}
+
+@media (width > 768px) {
+  .get-catalog__card:nth-child(odd) {
+    align-self: flex-end;
+  }
+
+  .get-catalog__card:nth-child(even) {
+    align-self: flex-start;
+  }
+}
+
+.get-catalog__card-img {
+  /* min-width 375px, max-width 1920px */
+  width: clamp(70px, 3.252rem + 4.79vw, 144px);
+  height: clamp(70px, 3.252rem + 4.79vw, 144px);
+}
+
+.get-catalog__card-percent {
+  font-weight: 400;
+  /* min-width 375px, max-width 1920px */
+  font-size: clamp(12px, 0.477rem + 1.17vw, 30px);
+  line-height: 130%;
+  color: var(--percent-color);
+}
+
+.get-catalog__card-dividends {
+  align-content: center;
+  font-weight: 400;
+  /* min-width 375px, max-width 1920px */
+  font-size: clamp(12px, 0.629rem + 0.52vw, 20px);
+  line-height: 130%;
+  color: var(--main-color);
+  border-radius: 18px;
+  width: 124px;
+  height: 36px;
+  background: #262626;
+}
+
+@media (width <= 1400px) {
+  .get-catalog__card-dividends {
+    width: 100px;
+    height: 26px;
+  }
+}
+
+@media (width <= 1200px) {
+  .get-catalog__card-dividends {
+    width: 90px;
+    height: 26px;
+  }
+}
+
+@media (width <= 992px) {
+  .get-catalog__card-dividends {
+    width: 80px;
+    height: 25px;
+  }
+}
+
+@media (width <= 768px) {
+  .get-catalog__card-dividends {
+    width: 74px;
+    height: 20px;
+  }
+}
+
+@media (width <= 576px) {
+  .get-catalog__card-dividends {
+    width: 65px;
+    height: 15px;
+  }
+}
+
+.get-catalog__text-button {
+  margin-top: 9px;
+}
+
+@media (width <= 1600px) {
+  .get-catalog__text-button {
+    width: 300px;
+    height: 86px;
+    font-size: 20px;
+  }
+}
+
+@media (width <= 1200px) {
+  .get-catalog__text-button {
+    width: 250px;
+    height: 66px;
+    font-size: 16px;
+    border-radius: 15px;
+    margin-top: 13px;
+  }
+}
+
+@media (width <= 768px) {
+  .get-catalog__text-button {
+    width: 200px;
+    font-weight: 500;
+    height: 56px;
+    font-size: 14px;
+    border-radius: 15px;
+    margin-top: 5px;
+  }
+}
+
+@media (width <= 576px) {
+  .get-catalog__text-button {
+    width: 139px;
+    height: 39px;
+    font-size: 10px;
+    border-radius: 4px;
+    margin-top: 0;
+    border: 1px solid var(--accent-color);
+  }
+}

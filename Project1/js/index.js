@@ -1,4 +1,5 @@
 import BurgerMenu from "./burger.js";
+import { productSlider } from "./product-slider.js";
 
 try {
   new BurgerMenu({
@@ -16,6 +17,8 @@ try {
     BREAKPOINT: 992,
     MAIN: "main",
   });
+
+  productSlider();
 } catch (error) {
   console.error(error);
 }
