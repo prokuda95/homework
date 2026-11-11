@@ -188,6 +188,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 159%;
+  padding-right: 10px;
 }
 
 @media (width <= 1400px) {
