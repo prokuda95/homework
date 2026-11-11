@@ -1,0 +1,210 @@
+.investment-steps {
+  margin-bottom: 302px;
+}
+
+.investment-steps__title {
+  /* min-width 375px, max-width 1920px */
+  font-size: clamp(25px, 0.88rem + 2.91vw, 70px);
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+@media (width <= 992px) {
+  .investment-steps__title {
+    margin-bottom: 28px;
+  }
+}
+
+@media (width <= 768px) {
+  .investment-steps__title {
+    margin-bottom: 20px;
+  }
+}
+
+.investment-steps__under-title {
+  max-width: 500px;
+  margin: 0 auto 130px;
+  text-align: center;
+}
+
+@media (width <= 1400px) {
+  .investment-steps__under-title {
+    font-size: 22px;
+  }
+}
+
+@media (width <= 1200px) {
+  .investment-steps__under-title {
+    font-size: 19px;
+    margin: 0 auto 100px;
+  }
+}
+
+@media (width <= 992px) {
+  .investment-steps__under-title {
+    font-size: 16px;
+    margin: 0 auto 70px;
+  }
+}
+
+@media (width <= 768px) {
+  .investment-steps__under-title {
+    font-size: 14px;
+    margin: 0 auto 70px;
+  }
+}
+
+@media (width <= 576px) {
+  .investment-steps__under-title {
+    font-size: 14px;
+    margin: 0 auto 50px;
+  }
+}
+
+.investment-steps__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 70px 100px;
+}
+
+.investment-steps__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 29px;
+}
+
+.investment-steps__card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(../../images/investment-steps/step-1-img.png);
+  top: 0;
+  right: -70%;
+  width: 100%;
+  height: 60%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.investment-steps__card:nth-child(2):after {
+  background: url(../../images/investment-steps/step-2-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.investment-steps__card:nth-child(3)::after {
+  background: url(../../images/investment-steps/step-3-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (width <= 1400px) {
+  .investment-steps__card {
+    gap: 15px;
+  }
+}
+
+@media (width > 848px) and (width <= 1278px) {
+  .investment-steps__card:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 539px;
+  }
+}
+
+@media (width <= 1200px) {
+  .investment-steps__card {
+    gap: 10px;
+  }
+}
+
+.investment-steps__card-step {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 130%;
+  color: var(--main-color);
+}
+
+@media (width <= 1400px) {
+  .investment-steps__card-step {
+    font-size: 19px;
+  }
+}
+
+@media (width <= 1200px) {
+  .investment-steps__card-step {
+    font-size: 17px;
+  }
+}
+
+@media (width <= 992px) {
+  .investment-steps__card-step {
+    font-size: 15px;
+  }
+}
+
+.investment-steps__card-title {
+  font-size: 35px;
+  max-width: 380px;
+  height: 140px;
+}
+
+@media (width <= 1400px) {
+  .investment-steps__card-title {
+    font-size: 32px;
+  }
+}
+
+@media (width <= 1200px) {
+  .investment-steps__card-title {
+    font-size: 29px;
+  }
+}
+
+@media (width <= 992px) {
+  .investment-steps__card-title {
+    font-size: 26px;
+    height: 100px;
+  }
+}
+
+@media (width <= 768px) {
+  .investment-steps__card-title {
+    font-size: 23px;
+    height: 80px;
+  }
+}
+
+@media (width <= 576px) {
+  .investment-steps__card-title {
+    font-size: 20px;
+    height: 60px;
+  }
+}
+
+.investment-steps__card-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 159%;
+  padding-right: 10px;
+}
+
+@media (width <= 1400px) {
+  .investment-steps__card-description {
+    font-size: 19px;
+  }
+}
+
+@media (width <= 1200px) {
+  .investment-steps__card-description {
+    font-size: 16px;
+  }
+}
+
+@media (width <= 992px) {
+  .investment-steps__card-description {
+    font-size: 13px;
+  }
+}
